@@ -2,11 +2,15 @@ import { PrismaClient } from '@prisma/client'
 
 const prismaClient = new PrismaClient()
 
-async function createPost() {
+async function createPlayer() {
   try {
-    await prismaClient.post.create({
+    await prismaClient.player.create({
       data: {
-        title: 'The second post by Tyson',
+        name: "Lebron James",
+        team: "Los Angeles Laker",
+        height: "6'8\"",
+        weight: "240",
+        age: "35"
       },
     })
   } catch (err) {
@@ -16,7 +20,7 @@ async function createPost() {
 
 async function main() {
     try {
-        await createPost()
+        await createPlayer()
     }
     catch(err) {
         console.log(err)

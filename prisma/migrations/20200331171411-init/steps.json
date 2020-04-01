@@ -123,7 +123,14 @@
     {
       "tag": "CreateField",
       "model": "Player",
-      "field": "name",
+      "field": "firstname",
+      "type": "String",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Player",
+      "field": "lastname",
       "type": "String",
       "arity": "Required"
     },

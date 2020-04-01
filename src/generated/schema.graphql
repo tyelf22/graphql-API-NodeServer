@@ -7,16 +7,16 @@ scalar DateTime
 type Player {
   age: String!
   createdAt: DateTime!
+  firstname: String!
   height: String!
   id: String!
-  name: String!
+  lastname: String!
   team: String!
   updatedAt: DateTime!
   weight: String!
 }
 
 type Query {
-  filterPlayers(searchString: String): [Player!]!
   Player(id: ID): Player
-  Players: [Player!]!
+  Players(searchString: String): [Player!]!
 }

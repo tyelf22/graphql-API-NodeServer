@@ -28,9 +28,10 @@ export interface NexusGenRootTypes {
   Player: { // root type
     age: string; // String!
     createdAt: any; // DateTime!
+    firstname: string; // String!
     height: string; // String!
     id: string; // String!
-    name: string; // String!
+    lastname: string; // String!
     team: string; // String!
     updatedAt: any; // DateTime!
     weight: string; // String!
@@ -51,15 +52,15 @@ export interface NexusGenFieldTypes {
   Player: { // field return type
     age: string; // String!
     createdAt: any; // DateTime!
+    firstname: string; // String!
     height: string; // String!
     id: string; // String!
-    name: string; // String!
+    lastname: string; // String!
     team: string; // String!
     updatedAt: any; // DateTime!
     weight: string; // String!
   }
   Query: { // field return type
-    filterPlayers: NexusGenRootTypes['Player'][]; // [Player!]!
     Player: NexusGenRootTypes['Player'] | null; // Player
     Players: NexusGenRootTypes['Player'][]; // [Player!]!
   }
@@ -67,11 +68,11 @@ export interface NexusGenFieldTypes {
 
 export interface NexusGenArgTypes {
   Query: {
-    filterPlayers: { // args
-      searchString?: string | null; // String
-    }
     Player: { // args
       id?: string | null; // ID
+    }
+    Players: { // args
+      searchString?: string | null; // String
     }
   }
 }

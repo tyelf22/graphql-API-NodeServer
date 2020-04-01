@@ -15,14 +15,14 @@ export const Query = queryType({
             }
         })
 
-        t.list.field('Players', {
-            type: 'Player',
-            resolve: (parent, args, ctx) => {
-                return ctx.prisma.player.findMany()
-            }
-        })
+        // t.list.field('Players', {
+        //     type: 'Player',
+        //     resolve: (parent, args, ctx) => {
+        //         return ctx.prisma.player.findMany()
+        //     }
+        // })
 
-        t.list.field('filterPlayers', {
+        t.list.field('Players', {
             type: 'Player',
             args: {
                 searchString: stringArg({nullable: true})
@@ -31,7 +31,7 @@ export const Query = queryType({
                 return ctx.prisma.player.findMany({
                     where: {
                         OR: [
-                            { name: {contains: searchString}},
+                            { firstname: {contains: searchString}},
                             { team: {contains: searchString}},
                         ]
                     }

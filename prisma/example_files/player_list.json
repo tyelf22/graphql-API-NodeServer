@@ -1,0 +1,227 @@
+[
+  {
+    "_id": "5e5320fb1ab71121a9ff722a",
+    "firstname": "giannis",
+    "lastname": "antetokounmpo",
+    "team": "bucks",
+    "height": "6' 11\"",
+    "weight": "242",
+    "age": "25"
+  },
+  {
+    "_id": "5e5321131ab71121a9ff722b",
+    "firstname": "kawhi",
+    "lastname": "leonard",
+    "team": "clippers",
+    "height": "6' 7\"",
+    "weight": "229",
+    "age": "28"
+  },
+  {
+    "_id": "5e5321211ab71121a9ff722c",
+    "firstname": "lebron",
+    "lastname": "james",
+    "team": "lakers",
+    "height": "6' 9\"",
+    "weight": "250",
+    "age": "35"
+  },
+  {
+    "_id": "5e5321381ab71121a9ff722d",
+    "firstname": "stephen",
+    "lastname": "curry",
+    "team": "warriors",
+    "height": "6' 3\"",
+    "weight": "190",
+    "age": "32"
+  },
+  {
+    "_id": "5e53214c1ab71121a9ff722e",
+    "firstname": "james",
+    "lastname": "harden",
+    "team": "rockets",
+    "height": "6' 5\"",
+    "weight": "220",
+    "age": "30"
+  },
+  {
+    "_id": "5e53215b1ab71121a9ff722f",
+    "firstname": "anthony",
+    "lastname": "davis",
+    "team": "lakers",
+    "height": "6' 10\"",
+    "weight": "254",
+    "age": "27"
+  },
+  {
+    "_id": "5e5321821ab71121a9ff7230",
+    "firstname": "joel",
+    "lastname": "embiid",
+    "team": "76ers",
+    "height": "7' 0\"",
+    "weight": "249",
+    "age": "26"
+  },
+  {
+    "_id": "5e53219d1ab71121a9ff7231",
+    "firstname": "nikola",
+    "lastname": "jokic",
+    "team": "nuggets",
+    "height": "7' 0\"",
+    "weight": "249",
+    "age": "25"
+  },
+  {
+    "_id": "5e5321b01ab71121a9ff7232",
+    "firstname": "paul",
+    "lastname": "george",
+    "team": "clippers",
+    "height": "6' 8\"",
+    "weight": "220",
+    "age": "29"
+  },
+  {
+    "_id": "5e5321c51ab71121a9ff7233",
+    "firstname": "damian",
+    "lastname": "lillard",
+    "team": "trailblazers",
+    "height": "6' 2\"",
+    "weight": "194",
+    "age": "29"
+  },
+  {
+    "_id": "5e5321da1ab71121a9ff7234",
+    "firstname": "jimmy",
+    "lastname": "butler",
+    "team": "heat",
+    "height": "6' 8\"",
+    "weight": "230",
+    "age": "30"
+  },
+  {
+    "_id": "5e5321ec1ab71121a9ff7235",
+    "firstname": "russell",
+    "lastname": "westbrook",
+    "team": "rockets",
+    "height": "6' 3\"",
+    "weight": "200",
+    "age": "31"
+  },
+  {
+    "_id": "5e5322061ab71121a9ff7236",
+    "firstname": "karl-anthony",
+    "lastname": "towns",
+    "team": "timberwolves",
+    "height": "7' 0\"",
+    "weight": "247",
+    "age": "24"
+  },
+  {
+    "_id": "5e5322151ab71121a9ff7237",
+    "firstname": "rudy",
+    "lastname": "gobert",
+    "team": "jazz",
+    "height": "7' 1\"",
+    "weight": "245",
+    "age": "27"
+  },
+  {
+    "_id": "5e5322241ab71121a9ff7238",
+    "firstname": "kyrie",
+    "lastname": "irving",
+    "team": "nets",
+    "height": "6' 2\"",
+    "weight": "193",
+    "age": "28"
+  },
+  {
+    "_id": "5e53223d1ab71121a9ff7239",
+    "firstname": "lamarcus",
+    "lastname": "aldridge",
+    "team": "spurs",
+    "height": "6' 11\"",
+    "weight": "260",
+    "age": "34"
+  },
+  {
+    "_id": "5e5322501ab71121a9ff723a",
+    "firstname": "draymond",
+    "lastname": "green",
+    "team": "warriors",
+    "height": "6' 6\"",
+    "weight": "230",
+    "age": "30"
+  },
+  {
+    "_id": "5e5322681ab71121a9ff723b",
+    "firstname": "al",
+    "lastname": "horford",
+    "team": "76ers",
+    "height": "6' 10\"",
+    "weight": "245",
+    "age": "33"
+  },
+  {
+    "_id": "5e53227a1ab71121a9ff723c",
+    "firstname": "blake",
+    "lastname": "griffin",
+    "team": "pistons",
+    "height": "6' 9\"",
+    "weight": "249",
+    "age": "31"
+  },
+  {
+    "_id": "5e53228b1ab71121a9ff723d",
+    "firstname": "kemba",
+    "lastname": "walker",
+    "team": "celtics",
+    "height": "6' 0\"",
+    "weight": "184",
+    "age": "29"
+  },
+  {
+    "_id": "5e53229f1ab71121a9ff723e",
+    "firstname": "chris",
+    "lastname": "paul",
+    "team": "thunder",
+    "height": "6' 0\"",
+    "weight": "175",
+    "age": "34"
+  },
+  {
+    "_id": "5e5322b11ab71121a9ff723f",
+    "firstname": "bradley",
+    "lastname": "beal",
+    "team": "wizards",
+    "height": "6' 3\"",
+    "weight": "207",
+    "age": "26"
+  },
+  {
+    "_id": "5e5322c61ab71121a9ff7240",
+    "firstname": "ben",
+    "lastname": "simmons",
+    "team": "76ers",
+    "height": "6' 10\"",
+    "weight": "229",
+    "age": "23"
+  },
+  {
+    "_id": "5e5322da1ab71121a9ff7241",
+    "firstname": "pascal",
+    "lastname": "siakam",
+    "team": "raptors",
+    "height": "6' 9\"",
+    "weight": "229",
+    "age": "25"
+  },
+  {
+    "_id": "5e5322e91ab71121a9ff7242",
+    "firstname": "jrue",
+    "lastname": "holiday",
+    "team": "pelicans",
+    "height": "6' 3\"",
+    "weight": "250",
+    "age": "29"
+  }
+]

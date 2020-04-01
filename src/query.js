@@ -15,13 +15,6 @@ export const Query = queryType({
             }
         })
 
-        // t.list.field('Players', {
-        //     type: 'Player',
-        //     resolve: (parent, args, ctx) => {
-        //         return ctx.prisma.player.findMany()
-        //     }
-        // })
-
         t.list.field('Players', {
             type: 'Player',
             args: {

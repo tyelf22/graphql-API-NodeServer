@@ -25,6 +25,7 @@ export interface NexusGenEnums {
 }
 
 export interface NexusGenRootTypes {
+  Mutation: {};
   Player: { // root type
     age: string; // String!
     createdAt: any; // DateTime!
@@ -49,6 +50,9 @@ export interface NexusGenAllTypes extends NexusGenRootTypes {
 }
 
 export interface NexusGenFieldTypes {
+  Mutation: { // field return type
+    createPlayer: NexusGenRootTypes['Player']; // Player!
+  }
   Player: { // field return type
     age: string; // String!
     createdAt: any; // DateTime!
@@ -67,6 +71,16 @@ export interface NexusGenFieldTypes {
 }
 
 export interface NexusGenArgTypes {
+  Mutation: {
+    createPlayer: { // args
+      age?: string | null; // String
+      firstname: string; // String!
+      height?: string | null; // String
+      lastname: string; // String!
+      team: string; // String!
+      weight?: string | null; // String
+    }
+  }
   Query: {
     Player: { // args
       id?: string | null; // ID
@@ -82,7 +96,7 @@ export interface NexusGenAbstractResolveReturnTypes {
 
 export interface NexusGenInheritedFields {}
 
-export type NexusGenObjectNames = "Player" | "Query";
+export type NexusGenObjectNames = "Mutation" | "Player" | "Query";
 
 export type NexusGenInputNames = never;
 

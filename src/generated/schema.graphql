@@ -4,6 +4,10 @@
 
 scalar DateTime
 
+type Mutation {
+  createPlayer(age: String, firstname: String!, height: String, lastname: String!, team: String!, weight: String): Player!
+}
+
 type Player {
   age: String!
   createdAt: DateTime!

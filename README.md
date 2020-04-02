@@ -53,37 +53,39 @@ query allPlayers {
 }
 ```
 
-<Details><Summary><strong>See more API operations</strong></Summary>
-
 ### Create a new player
 
 ```graphql
 mutation createPlayer {
-  createPlayer(firstname: "mike", lastname: "conley", team: "jazz", height: "6' 1\"", weight:"175" age: "32"){
+  createPlayer(firstname: "string", lastname: "string", team: "string", height: "string", weight:"string" age: "string"){
     firstname
     lastname
   }
 }
 ```
+> **Note**: You need to replace the `string`-placeholder with an actual string.
+
 
 ### Delete a player
 
 ```graphql
 mutation deleteOnePlayer {
   deleteOnePlayer(where: {
-    id: "ck8hwdg4v0002j3h2rr87cynq"
+    id: "id string"
   }) {
     id
     firstname
   }
 }
 ```
+> **Note**: You need to replace the `id string`-placeholder with an actual string.
+
 
 ### Update a player
 
 ```graphql
 mutation updatePlayer {
-  updatePlayer(id:"ck8hwdg4v0002j3h2rr87cynq", 
+  updatePlayer(id:"id string", 
     firstname: "updatedfname", 
     lastname: "updatedlname", 
     team: "updatedteam", 
@@ -95,6 +97,8 @@ mutation updatePlayer {
   }
 }
 ```
+> **Note**: You need to replace the `id string`-placeholder with an actual string.
+
 
 ### Retrive a single player
 
@@ -124,6 +128,4 @@ query allPlayers {
 }
 ```
 > **Note**: You need to replace the `search string`-placeholder with an actual string.
-
-</Details>
 

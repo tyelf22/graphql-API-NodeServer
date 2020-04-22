@@ -1,6 +1,6 @@
 # NBA Players GraphQL API
 
-This is a graphql api that was created to give the ability of full CRUD of NBA players. Check out the information below on how to interact with the schema.
+This is a graphql api that was created to give the ability of full CRUD operations of NBA players. Check out the information below on how to interact with the schema.
 
 ## How to use
 
@@ -21,19 +21,37 @@ npm install
 
 Note that this also generates Prisma Client JS into `node_modules/@prisma/client` via a `postinstall` hook of the `@prisma/client` package from your `package.json`.
 
-### 2. Start the GraphQL server
+### 2. Run each npm script in package.json
 
-Launch your GraphQL server with this command:
+ ```
+ npm run launchDocker
+ ``` 
+ ``` 
+ npm run createDB
+ ```     
+ ``` 
+ npm run generate
+ ``` 
+ ``` 
+ npm run seed
+ ```         
+ ### Dev Server
+ ``` 
+ npm run dev
+ ``` 
+ > **Note**: Navigate to [http://localhost:5555](http://localhost:5555) in browser to view prisma studio         
 
+### Graphql Playground
+
+```javascript
+npm start
 ```
-npm run start
-```
+ > **Note**: Navigate to [http://localhost:4000](http://localhost:4000) in your browser to explore the API of your GraphQL server in a [GraphQL Playground](https://github.com/prisma/graphql-playground).  
 
-Navigate to [http://localhost:4000](http://localhost:4000) in your browser to explore the API of your GraphQL server in a [GraphQL Playground](https://github.com/prisma/graphql-playground).
 
 ## Using the GraphQL API
 
-The schema that specifies the API operations of your GraphQL server is defined in [`./schema.graphql`](./schema.graphql). Below are a number of operations that you can send to the API using the GraphQL Playground.
+The schema that specifies the API operations of your GraphQL server is defined in [`./prisma/schema.prisma`](./prisma/schema.prisma). Below are a number of operations that you can send to the API using the GraphQL Playground.
 
 Feel free to adjust any operation by adding or removing fields. The GraphQL Playground helps you with its auto-completion and query validation features.
 
@@ -63,7 +81,7 @@ mutation createPlayer {
   }
 }
 ```
-> **Note**: You need to replace the `string`-placeholder with an actual string.
+> **Note**: You need to replace the `string` placeholder with an actual string.
 
 
 ### Delete a player
@@ -78,7 +96,7 @@ mutation deleteOnePlayer {
   }
 }
 ```
-> **Note**: You need to replace the `id string`-placeholder with an actual string.
+> **Note**: You need to replace the `id string` placeholder with an actual string.
 
 
 ### Update a player
@@ -97,7 +115,7 @@ mutation updatePlayer {
   }
 }
 ```
-> **Note**: You need to replace the `id string`-placeholder with an actual string.
+> **Note**: You need to replace the `id string` placeholder with an actual string.
 
 
 ### Retrive a single player
@@ -110,7 +128,7 @@ query getPlayer {
   }
 }
 ```
-> **Note**: You need to replace the `id`-placeholder with an actual `id` from a `player` item.
+> **Note**: You need to replace the `id` placeholder with an actual `id` from a `player` item.
 
 ### Retrieve players with search parameter
 
@@ -127,5 +145,5 @@ query allPlayers {
   }
 }
 ```
-> **Note**: You need to replace the `search string`-placeholder with an actual string.
+> **Note**: You need to replace the `search string` placeholder with an actual string.
 

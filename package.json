@@ -1,15 +1,15 @@
 {
   "name": "javascript-graphql",
   "scripts": {
-    "nuke": "docker stop pg-docker && docker rm pg-docker && docker volume rm -f pgdata && rm -rf prisma/migrations",
-    "launchDocker": "docker run --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v pgdata:/var/lib/postgresql/data postgres:latest",
+    "nuke": "docker stop player-docker && docker rm player-docker && docker volume rm -f player-data && rm -rf prisma/migrations",
+    "launchDocker": "docker run --name player-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v player-data:/var/lib/postgresql/data postgres:latest",
     "createDB": "npx prisma2 migrate save --name 'init' --experimental && npx prisma2 migrate up --experimental",
     "generate": "npx prisma2 generate",
     "postinstall": "npm -s run generate",
     "seed": "node -r esm ./prisma/seed.js",
     "dev": "npx prisma2 studio --experimental",
     "start": "node -r esm ./src/server",
-    "startContainer": "docker container start pg-docker"
+    "startContainer": "docker container start player-docker"
   },
   "dependencies": {
     "@prisma/client": "2.0.0-preview025",

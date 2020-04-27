@@ -4,7 +4,7 @@ export const Mutation = mutationType({
     name: 'Mutation',
     definition(t) {
 
-        t.crud.deleteOnePlayer()
+        // t.crud.deleteOnePlayer()
         
         t.field('createPlayer', {
             type: 'Player',
@@ -57,6 +57,28 @@ export const Mutation = mutationType({
                 })
             }
         })
+
+        t.field('deleteOnePlayer', {
+            type: 'Player',
+            args: { 
+                id: idArg(),
+            },
+            resolve: (parent, { id }, ctx) => {
+                return ctx.prisma.player.delete({
+                    where: {
+                        id
+                    },
+                    // data: {
+                    //     firstname,
+                    //     lastname,
+                    //     team,
+                    //     height,
+                    //     weight,
+                    //     age
+                    // }
+                })
+            }
+        })        
     }
 })
 

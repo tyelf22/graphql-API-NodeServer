@@ -19,9 +19,6 @@ declare global {
 }
 
 export interface NexusGenInputs {
-  PlayerWhereUniqueInput: { // input type
-    id?: string | null; // String
-  }
 }
 
 export interface NexusGenEnums {
@@ -50,13 +47,12 @@ export interface NexusGenRootTypes {
 }
 
 export interface NexusGenAllTypes extends NexusGenRootTypes {
-  PlayerWhereUniqueInput: NexusGenInputs['PlayerWhereUniqueInput'];
 }
 
 export interface NexusGenFieldTypes {
   Mutation: { // field return type
     createPlayer: NexusGenRootTypes['Player']; // Player!
-    deleteOnePlayer: NexusGenRootTypes['Player'] | null; // Player
+    deleteOnePlayer: NexusGenRootTypes['Player']; // Player!
     updatePlayer: NexusGenRootTypes['Player']; // Player!
   }
   Player: { // field return type
@@ -87,7 +83,7 @@ export interface NexusGenArgTypes {
       weight?: string | null; // String
     }
     deleteOnePlayer: { // args
-      where: NexusGenInputs['PlayerWhereUniqueInput']; // PlayerWhereUniqueInput!
+      id?: string | null; // ID
     }
     updatePlayer: { // args
       age?: string | null; // String
@@ -116,7 +112,7 @@ export interface NexusGenInheritedFields {}
 
 export type NexusGenObjectNames = "Mutation" | "Player" | "Query";
 
-export type NexusGenInputNames = "PlayerWhereUniqueInput";
+export type NexusGenInputNames = never;
 
 export type NexusGenEnumNames = never;
 

@@ -19,7 +19,9 @@ cd graphql-API-NodeServer.git
 npm install
 ```
 
-Note that this also generates Prisma Client JS into `node_modules/@prisma/client` via a `postinstall` hook of the `@prisma/client` package from your `package.json`.
+This also generates Prisma Client JS into `node_modules/@prisma/client` via a `postinstall` hook of the `@prisma/client` package from your `package.json`.
+
+> **Note**: You will need Docker installed on your local machine for the following scripts to work. If there are permission errors add "sudo" to the beginning of the script.
 
 ### 2. Run each npm script in package.json
 
@@ -47,6 +49,13 @@ Note that this also generates Prisma Client JS into `node_modules/@prisma/client
 npm start
 ```
  > **Note**: Navigate to [http://localhost:4000](http://localhost:4000) in your browser to explore the API of your GraphQL server in a [GraphQL Playground](https://github.com/prisma/graphql-playground).  
+
+### Errors
+If errors occur: 
+ ``` 
+ npm run nuke
+ ``` 
+This will delete all docker data associated with container.
 
 
 ## Using the GraphQL API
